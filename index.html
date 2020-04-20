@@ -21,8 +21,9 @@
       rel="stylesheet"
     />
     <script src="parallax.js"></script>
-    <title>Daksh Yadav - Web Developer/Designer</title>
+    <title>Daksh Yadav - Web Developer | Designer</title>
   </head>
+
   <body>
     <!-- CENTER TITLE -->
     <div id="titleDiv">
@@ -32,7 +33,7 @@
         draggable="false"
         style="-moz-user-select: none;"
       />
-      <p id="subheader">Full-stack Web Developer/Designer</p>
+      <p id="subheader">Full-stack Web Developer | Designer</p>
       <br />
       <br />
       <h2 id="getStarted">Let's Get Started!</h2>
@@ -62,6 +63,11 @@
     </div>
     <!-- -BACKGROUND -->
     <script>
+      window.onload = function () {
+        if (window.innerHeight > window.innerWidth) {
+          window.location.href = "https://dakshyadav.netlify.app/mobile/";
+        }
+      };
       //-----------Parallax Effect-----------
       var scene = document.getElementById("scene");
       var parallax = new Parallax(scene);
