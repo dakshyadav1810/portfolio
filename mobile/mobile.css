@@ -75,18 +75,6 @@ body {
   margin: auto;
   -moz-user-select: none;
 }
-#bottomLineDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#bottomLine {
-  position: absolute;
-  z-index: 2;
-  bottom: 15;
-  opacity: 50%;
-  width: 40%;
-}
 
 #logo {
   padding: 15px;
