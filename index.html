@@ -1,4 +1,11 @@
 <html>
+  <script>
+    window.onload = function () {
+      if (window.innerHeight > window.innerWidth) {
+        window.location.href = "https://dakshyadav.netlify.app/mobile/";
+      }
+    };
+  </script>
   <head>
     <!-- Hello random source code viewer :) -->
     <!-- META TAGS-->
@@ -63,11 +70,6 @@
     </div>
     <!-- -BACKGROUND -->
     <script>
-      window.onload = function () {
-        if (window.innerHeight > window.innerWidth) {
-          window.location.href = "https://dakshyadav.netlify.app/mobile/";
-        }
-      };
       //-----------Parallax Effect-----------
       var scene = document.getElementById("scene");
       var parallax = new Parallax(scene);
