@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <!-- Hello random source code viewer :) -->
+    <!-- META TAGS-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Web Designer/Developer Portfolio" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Daksh Yadav" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- META TAGS-->
+
+    <link rel="stylesheet" href="desktop.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="parallax.js"></script>
+    <title>Daksh Yadav - Web Developer/Designer</title>
+  </head>
+  <body>
+    <!-- CENTER TITLE -->
+    <div id="titleDiv">
+      <img
+        id="title"
+        src="images/title.png"
+        draggable="false"
+        style="-moz-user-select: none;"
+      />
+      <p id="subheader">Full-stack Web Developer/Designer</p>
+      <br />
+      <br />
+      <h2 id="getStarted">Let's get started!</h2>
+    </div>
+    <!-- CENTER TITLE -->
+
+    <!-- -BACKGROUND -->
+    <div id="container">
+      <ul id="scene">
+        <li class="layer" data-depth="0.05">
+          <img
+            id="background"
+            src="images/BG.png"
+            draggable="false"
+            style="-moz-user-select: none;"
+          />
+        </li>
+        <li class="layer" data-depth="-0.05">
+          <img
+            id="foreground"
+            src="images/balloon.png"
+            draggable="false"
+            style="-moz-user-select: none;"
+          />
+        </li>
+      </ul>
+    </div>
+    <!-- -BACKGROUND -->
+    <script>
+      //-----------Parallax Effect-----------
+      var scene = document.getElementById("scene");
+      var parallax = new Parallax(scene);
+      //-----------Parallax Effect-----------
+    </script>
+  </body>
+</html>
