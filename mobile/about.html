@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <!-- META TAGS-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Web Designer/Developer Portfolio" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Daksh Yadav" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- META TAGS-->
+    <link rel="stylesheet" href="about.css" />
+    <link rel="icon" href="../images/favicon.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <title>About Me</title>
+  </head>
+  <body>
+    <img id="logo" src="images/logo.png" alt="" />
+    <img id="overlay" src="images/overlay01.png" alt="" />
+    <p id="aboutText">
+      <span id="aboutHeader">Hello There! </span>
+      <br />
+      <br />
+      <span id="typewrite">
+        <!-- I am a young <span id="boldText">software developer</span> and
+        <span id="boldText">musician</span> from India. I am currently in
+        <span id="boldText">high school</span> and I wish to pursue a career as
+        a software engineer. -->
+      </span>
+    </p>
+    <p id="number">1</p>
+  </body>
+  <script>
+    var typewriter = new Typewriter("#typewrite", {
+      strings:
+        '"I am a young software developer and musician from India. I am currently in high school and I wish to pursue a career as a software engineer."',
+      autoStart: true,
+      delay: 50,
+    });
+  </script>
+</html>

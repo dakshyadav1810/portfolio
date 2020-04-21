@@ -9,34 +9,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- META TAGS-->
 
-    <link rel="stylesheet" href="mobile.css" />
-    <link rel="icon" href="../images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="desktop.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap"
       rel="stylesheet"
     />
-
-    <title>Daksh Yadav - Developer | Designer</title>
+    <script src="parallax.js"></script>
+    <title>Daksh Yadav - Web Developer | Designer</title>
   </head>
+
   <body>
     <!-- CENTER TITLE -->
     <div id="titleDiv">
       <img
         id="title"
-        src="../images/title.png"
+        src="images/title.png"
         draggable="false"
         style="-moz-user-select: none;"
       />
       <p id="subheader">Full-stack Web Developer | Designer</p>
       <br />
       <br />
-      <h2 id="getStarted">
-        Let's Get Started!
-      </h2>
+      <h2 id="getStarted">Let's Get Started!</h2>
     </div>
     <!-- CENTER TITLE -->
-
-    <img id="logo" src="images/logo.png" alt="" />
 
     <!-- -BACKGROUND -->
     <div id="container">
@@ -59,10 +56,12 @@
         </li>
       </ul>
     </div>
+    <!-- -BACKGROUND -->
     <script>
-      document.getElementById("getStarted").onclick = function () {
-        window.location.href = "about.html";
-      };
+      //-----------Parallax Effect-----------
+      var scene = document.getElementById("scene");
+      var parallax = new Parallax(scene);
+      //-----------Parallax Effect-----------
     </script>
   </body>
 </html>

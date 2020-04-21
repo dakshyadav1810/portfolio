@@ -1,0 +1,83 @@
+html {
+  background-color: #08090c;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#overlay {
+  width: 100%;
+  height: auto;
+  animation: overlayIn 1s forwards;
+  transition-timing-function: ease-in;
+}
+#aboutText {
+  color: white;
+  opacity: 80%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 10%;
+  font-size: larger;
+  animation: aboutTextIn 1s forwards;
+  transition-timing-function: ease-in;
+}
+@keyframes aboutTextIn {
+  from {
+    transform: translate(0%, 150%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes overlayIn {
+  from {
+    transform: translate(0%, -150%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes slideInFromLeft {
+  from {
+    transform: translate(-150%, 0%);
+  }
+  50% {
+    transform: translate(-150%, 0%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+#aboutHeader {
+  font-size: xx-large;
+}
+#boldText {
+  font-weight: 700;
+}
+#logo {
+  padding: 15px;
+  position: absolute;
+  z-index: 2;
+  opacity: 30%;
+  width: 8%;
+  animation: slideInFromLeft 1s forwards;
+  transition-timing-function: ease-in;
+}
+#number {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  bottom: -30;
+  font-weight: 700;
+  font-size: 100px;
+  color: white;
+  opacity: 10%;
+  margin: 0;
+  animation: slideInFromLeft 1s forwards;
+  transition-timing-function: ease-in;
+}
+.Typewriter__cursor {
+  color: orange;
+  font-weight: bold;
+}
