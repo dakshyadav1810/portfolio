@@ -67,8 +67,6 @@ body {
 }
 #number {
   font-family: "Roboto", sans-serif;
-  position: absolute;
-  bottom: -30;
   font-weight: 700;
   font-size: 100px;
   color: white;
@@ -76,6 +74,9 @@ body {
   margin: 0;
   animation: slideInFromLeft 1s forwards;
   transition-timing-function: ease-in;
+  position: fixed;
+  left: 0px;
+  bottom: -30px;
 }
 .Typewriter__cursor {
   color: orange;
