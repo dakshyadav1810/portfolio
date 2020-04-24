@@ -22,10 +22,8 @@ body {
 }
 #background {
   position: absolute;
-  height: auto;
+  height: 100%;
   width: 100%;
-  transform-origin: center;
-  transform: scale(1.1, 1.1);
 }
 #scene {
   padding: 0;
@@ -39,7 +37,6 @@ body {
   display: block;
 }
 #titleDiv {
-  overflow: hidden;
   z-index: 1;
   display: flex;
   margin: auto;
@@ -72,17 +69,37 @@ body {
   padding: 20px;
   font-size: medium;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.103);
+  border: 1px solid rgba(255, 255, 255, 0.171);
   transition-property: background-color, border;
   transition-duration: 1s;
   margin: 10%;
   -moz-user-select: none;
+  animation: getStartedIn 1s forwards;
 }
 
 #logo {
+  transform: translate(-100%, 0%);
   padding: 15px;
   position: absolute;
   z-index: 2;
   opacity: 30%;
   width: 8%;
+  animation: logoIn 1s forwards;
+  animation-delay: 2s;
+}
+@keyframes logoIn {
+  from {
+    transform: translate(-100%, 0%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes getStartedIn {
+  from {
+    transform: translate(0%, 1000%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
 }

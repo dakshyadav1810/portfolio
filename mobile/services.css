@@ -1,5 +1,5 @@
 html {
-  background-color: #08090c;
+  background-color: #8c3036;
   margin: 0;
   padding: 0;
 }
@@ -25,8 +25,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   padding: 10%;
+  padding-top: 2%;
   font-size: larger;
   height: 30%;
+  line-height: 150%;
 }
 .aboutTextAnim {
   animation: aboutTextIn 1s forwards;
@@ -62,7 +64,7 @@ body {
   transition-timing-function: ease-in;
   position: fixed;
   left: 0px;
-  bottom: -30px;
+  bottom: -25px;
 }
 .Typewriter__cursor {
   color: orange;
@@ -87,7 +89,6 @@ body {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently */
 }
-
 #backArrow {
   z-index: 5;
   position: fixed;
@@ -107,7 +108,6 @@ body {
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently */
 }
-
 @keyframes aboutTextIn {
   from {
     transform: translate(0%, 150%);

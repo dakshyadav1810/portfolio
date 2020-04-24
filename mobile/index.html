@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap"
       rel="stylesheet"
     />
-
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Daksh Yadav - Developer | Designer</title>
   </head>
   <body>
@@ -27,7 +27,7 @@
         draggable="false"
         style="-moz-user-select: none;"
       />
-      <p id="subheader">Full-stack Web Developer | Designer</p>
+      <p id="subheader"></p>
       <br />
       <br />
       <h2 id="getStarted">
@@ -63,6 +63,16 @@
       document.getElementById("getStarted").onclick = function () {
         window.location.href = "about.html";
       };
+      const sleep = (milliseconds) => {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+      };
+      sleep(500).then(() => {
+        var typewriter = new Typewriter("#subheader", {
+          strings: "Full-stack web developer | Designer",
+          autoStart: true,
+          delay: 50,
+        });
+      });
     </script>
   </body>
 </html>

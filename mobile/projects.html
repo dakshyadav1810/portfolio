@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <!-- META TAGS-->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Web Designer/Developer Portfolio" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="Daksh Yadav" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- META TAGS-->
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img id="logo" src="images/logo.png" alt="" />
+    <h1 id="backArrow" onclick="reverseAnimationsBackward()">🡄</h1>
+    <h1 id="nextArrow" onclick="reverseAnimationsForward()">🡆</h1>
+    <div id="projectArrows">
+      <h1 id="prevProject">⯇</h1>
+      <h1 id="nextProject">⯈</h1>
+    </div>
+    <p id="number">3</p>
+    <div id="headerDiv">
+      <p id="header">Projects</p>
+      <p id="subheader">I've worked on!</p>
+    </div>
+
+    <div id="projectDisplay">
+      <div id="div01">
+        <img id="project01" src="images/pf01.PNG" alt="" />
+        <p id="title01">Priden</p>
+        <p id="subtitle01">(www.priden.co)</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const sleep = (milliseconds) => {
+      return new Promise((resolve) => setTimeout(resolve, milliseconds));
+    };
+    //Outro Animations
+    function reverseAnimationsForward() {
+      sleep(500).then(() => {
+        window.location.href = "contact.html";
+      });
+    }
+    function reverseAnimationsBackward() {
+      sleep(500).then(() => {
+        window.location.href = "services.html";
+      });
+    }
+  </script>
+</html>
